@@ -4,6 +4,7 @@
 
 class Program
 {
+    /*
     public static void Main(string[] args)
     {
         Console.WriteLine("Eingabe: ");
@@ -104,6 +105,7 @@ class Program
 
         Console.WriteLine("--------");
         
+        
         int k = 0;
         while (true)
         {
@@ -111,5 +113,24 @@ class Program
             Console.Write("x"); // Ohne Zeilenumbruch
             if(k == 10) break;
         }
+        
+        Console.WriteLine("\n--------");
+        
+        // Array
+        string[] namen = {"Peter", "Bruce", "Natasha", "Carol"};
+        Console.WriteLine(namen[2]);
+        namen[2] = "Scott";
+        //namen[5] = "Tony"; // Exception
+        Console.WriteLine(namen[2]);
+        Console.WriteLine(namen.Length);
+        //Console.WriteLine(namen);
+
+        //string[] namen2 = new string[10];
+        string[] namen2 = new string[2]{"Peter", "Bruce"};
+
+        string[] namen3;
+        // namen3 = {"Peter", "Bruce"}; // Nur in Verbindung mit gleichzeitiger Deklaration möglich
+        namen3 = new string[]{"Peter", "Bruce"}; // OK
     }
+    */
 }
