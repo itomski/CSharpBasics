@@ -11,7 +11,9 @@ public class PersonTest
         
         Console.WriteLine("----------------");
         
+        // Referenz-Typ: Wird auf dem Heap abgelegt
         Person p1 = new Person("Peter", "Parker");
+        
         Console.WriteLine(p1);
         Console.WriteLine(p1.GetId());
         Person p2 = new Person("Carol", "Danvers");

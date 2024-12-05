@@ -14,6 +14,7 @@ class Program
         Console.WriteLine("Deine Eingabe: " + eingabe);
 
         // lokale Variablen
+        // Value Types - Werden auf dem Stack abgelegt
         byte b1 = 255; // Ohne Vorzeichen
         Byte b2 = 255;
         
