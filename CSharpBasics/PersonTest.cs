@@ -4,6 +4,13 @@ public class PersonTest
 {
     public static void Main(string[] args)
     {
+        foreach (var a in args)
+        {
+            Console.WriteLine(a);
+        }
+        
+        Console.WriteLine("----------------");
+        
         Person p1 = new Person("Peter", "Parker");
         Console.WriteLine(p1);
         Console.WriteLine(p1.GetId());
@@ -58,5 +65,11 @@ public class PersonTest
         
         Console.Write("Gleiches Objekt? ");
         Console.WriteLine(spiderman == spiderman2);
+
+        int i = 3;
+        int j = 22;
+        Console.WriteLine(i.ToString("0000"));
+        var iAsStr = $"{i:D2}:{j:D2}";
+        Console.WriteLine(iAsStr);
     }
 }
