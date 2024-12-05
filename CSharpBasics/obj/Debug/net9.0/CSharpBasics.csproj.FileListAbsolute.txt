@@ -12,3 +12,4 @@
 /Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.pdb
 /Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.genruntimeconfig.cache
 /Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/ref/CSharpBasics.dll
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.sourcelink.json

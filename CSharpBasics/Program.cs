@@ -12,6 +12,7 @@ class Program
         Console.ResetColor();
         Console.WriteLine("Deine Eingabe: " + eingabe);
 
+        // lokale Variablen
         byte b1 = 255; // Ohne Vorzeichen
         Byte b2 = 255;
         
@@ -42,7 +43,73 @@ class Program
         bool bo1 = true;
         Boolean bo2 = true;
 
-        string str1 = "Mein Text";
+        string? str1 = "Mein Text"; // ? = null ist erlaubt
         String str2 = "Mein Text";
+
+        str1 = null;
+
+        Console.WriteLine("--------");
+        
+        if (str1 != null)
+        {
+            Console.WriteLine(str1.ToUpper());
+        }
+        else if (str2.Length == 0)
+        {
+            Console.WriteLine("Leer");
+        }
+        else
+        {
+            Console.WriteLine("NULL");
+        }
+        
+        Console.WriteLine("--------");
+        
+        // IList ist ein Interface
+        // List ist eine Klasse
+        IList<int> zahlen = new List<int>(); 
+        zahlen.Add(5);
+        zahlen.Add(7);
+        zahlen.Add(22);
+        zahlen.Add(1);
+
+        for (int i = 0; i < zahlen.Count; i++)
+        {
+            Console.WriteLine(zahlen[i]);
+        }
+        
+        Console.WriteLine("--------");
+
+        foreach (var i in zahlen)
+        {
+            Console.WriteLine(i);
+        }
+
+        var j = 100;
+        
+        Console.WriteLine("--------");
+        
+        var input = Console.ReadLine();
+
+        switch (input)
+        {
+            case "a": Console.WriteLine("Auswahl 1"); break;
+            case "b": Console.WriteLine("Auswahl 2"); break;
+            case "c": Console.WriteLine("Auswahl 3"); break;
+            case "d": Console.WriteLine("Auswahl 4"); break;
+            default: 
+                Console.WriteLine("Falsche Eingabe");
+                break;
+        }
+
+        Console.WriteLine("--------");
+        
+        int k = 0;
+        while (true)
+        {
+            k++;
+            Console.Write("x"); // Ohne Zeilenumbruch
+            if(k == 10) break;
+        }
     }
 }
