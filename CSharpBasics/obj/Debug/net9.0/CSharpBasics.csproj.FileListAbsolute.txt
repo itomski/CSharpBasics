@@ -1,0 +1,14 @@
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/bin/Debug/net9.0/CSharpBasics
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/bin/Debug/net9.0/CSharpBasics.deps.json
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/bin/Debug/net9.0/CSharpBasics.runtimeconfig.json
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/bin/Debug/net9.0/CSharpBasics.dll
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/bin/Debug/net9.0/CSharpBasics.pdb
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.AssemblyInfoInputs.cache
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.AssemblyInfo.cs
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.csproj.CoreCompileInputs.cache
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.dll
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/refint/CSharpBasics.dll
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.pdb
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/CSharpBasics.genruntimeconfig.cache
+/Users/tlubowiecki/RiderProjects/CSharpBasics/CSharpBasics/obj/Debug/net9.0/ref/CSharpBasics.dll
