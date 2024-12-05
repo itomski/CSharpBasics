@@ -7,6 +7,8 @@ public class Person
     private string vorname;
     private string nachname;
     private string info;
+    // internal == default bei Java
+    internal bool check = false;
 
     // Klassenvariable: Alle Objekte teilen sich gemeinsam eine Variable
     private static int count = 0;
@@ -16,6 +18,14 @@ public class Person
     {
         id = ++count;
         this.vorname = vorname;
+        this.nachname = nachname;
+    }
+    
+    // Überladen
+    public Person(string nachname)
+    {
+        id = ++count;
+        this.vorname = "Unbekannt";
         this.nachname = nachname;
     }
 
