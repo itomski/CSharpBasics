@@ -14,10 +14,8 @@ public class Person
     private static int count = 0;
 
     // Eigener Konstruktor führt dazu, dass c# keinen Default-Konstruktor bereitstellt
-    public Person(string vorname, string nachname)
+    public Person(string vorname, string nachname) : this(vorname) // Benutzt den Konstruktor mit einem Parameter
     {
-        id = ++count;
-        this.vorname = vorname;
         this.nachname = nachname;
     }
     
