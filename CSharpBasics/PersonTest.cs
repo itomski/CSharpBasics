@@ -2,18 +2,10 @@ namespace CSharpBasics;
 
 public class PersonTest
 {
-    public static void Main(string[] args)
+    public static void Instanzierung()
     {
-        foreach (var a in args)
-        {
-            Console.WriteLine(a);
-        }
-        
-        Console.WriteLine("----------------");
-        
         // Referenz-Typ: Wird auf dem Heap abgelegt
         Person p1 = new Person("Peter", "Parker");
-        
         Console.WriteLine(p1);
         Console.WriteLine(p1.GetId());
         Person p2 = new Person("Carol", "Danvers");
@@ -47,7 +39,10 @@ public class PersonTest
         PersonUtility.ShowPerson(personen);
         
         Console.WriteLine("--------------");
-        
+    }
+    
+    public static void SingletonBeispiel()
+    {
         //Spiderman spiderman = new Spiderman(); // Error:; Konstruktor ist privat
         Spiderman spiderman = Spiderman.GetInstance(); // Verwendung eines Singleton
         spiderman.UseWeb();
@@ -67,11 +62,5 @@ public class PersonTest
         
         Console.Write("Gleiches Objekt? ");
         Console.WriteLine(spiderman == spiderman2);
-
-        int i = 3;
-        int j = 22;
-        Console.WriteLine(i.ToString("0000"));
-        var iAsStr = $"{i:D2}:{j:D2}";
-        Console.WriteLine(iAsStr);
     }
 }

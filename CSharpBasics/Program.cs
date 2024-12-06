@@ -1,20 +1,57 @@
 ﻿// PascalCase: Namespaces, Klassen, Methoden, Konstanten, public Eigenschaften, Enums
 // camelCase: Methoden-Argumente, lokale Variablen
 // _camelCase: private Variablen
+using CSharpBasics;
 
 class Program
 {
-    /*
     public static void Main(string[] args)
+    {
+        // Programm-Argumente verarbeiten
+        foreach (var a in args)
+        {
+            Console.WriteLine(a);
+        }
+        
+        // InputOutput();
+        // Datentypen();
+        // Kontrollstrukturen();
+        // Arrays();
+        // StringFormat();
+        // PersonTest.Instanzierung();
+        // PersonTest.SingletonBeispiel();
+        // Konvertierung();
+        // Vererbung.KlassenVererbung();
+        // Interfaces.InterfaceVererbung();
+        Delegates.DelegateTest();
+    }
+
+    public static void Konvertierung()
+    {
+        string? eingabe = Console.ReadLine(); // ReadLine liefert einen string
+        int i;
+        // int i = int.Parse(eingabe); // Kann eine Exception werfen, wenn nichts eingegeben wird
+        int.TryParse(eingabe, out i); // Wirft keine Exception
+
+        i = Convert.ToInt32(eingabe);
+        Console.WriteLine(i + 100);
+    }
+    
+    public static void InputOutput()
     {
         Console.WriteLine("Eingabe: ");
         Console.ForegroundColor = ConsoleColor.DarkYellow;
         string? eingabe = Console.ReadLine(); // ? = kann auch null sein
         Console.ResetColor();
         Console.WriteLine("Deine Eingabe: " + eingabe);
-
+    }
+    
+    public static void Datentypen()
+    {
         // lokale Variablen
         // Value Types - Werden auf dem Stack abgelegt
+        // In C# gibt es keine Wrapper-Klassen
+        // Haben auch Methoden
         byte b1 = 255; // Ohne Vorzeichen
         Byte b2 = 255;
         
@@ -45,6 +82,13 @@ class Program
         bool bo1 = true;
         Boolean bo2 = true;
 
+        string? str1 = "Mein Text"; // ? = null ist erlaubt
+        String str2 = "Mein Text";
+        str1 = null;
+    }
+    
+    public static void Kontrollstrukturen()
+    {
         string? str1 = "Mein Text"; // ? = null ist erlaubt
         String str2 = "Mein Text";
 
@@ -106,7 +150,6 @@ class Program
 
         Console.WriteLine("--------");
         
-        
         int k = 0;
         while (true)
         {
@@ -114,9 +157,10 @@ class Program
             Console.Write("x"); // Ohne Zeilenumbruch
             if(k == 10) break;
         }
-        
-        Console.WriteLine("\n--------");
-        
+    }
+    
+    public static void Arrays()
+    {
         // Array
         string[] namen = {"Peter", "Bruce", "Natasha", "Carol"};
         Console.WriteLine(namen[2]);
@@ -133,5 +177,13 @@ class Program
         // namen3 = {"Peter", "Bruce"}; // Nur in Verbindung mit gleichzeitiger Deklaration möglich
         namen3 = new string[]{"Peter", "Bruce"}; // OK
     }
-    */
+
+    public static void StringFormat()
+    {
+        int i = 3;
+        int j = 22;
+        Console.WriteLine(i.ToString("0000"));
+        var iAsStr = $"{i:D2}:{j:D2}";
+        Console.WriteLine(iAsStr);
+    }
 }
